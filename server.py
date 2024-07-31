@@ -8,7 +8,7 @@ from newspaper import Article
 import uvicorn
 
 nltk.download('stopwords')
-nepaliNewsSites = ['merolagani', 'bizshala', 'bizpati', 'arthasarokar', 'onlinekhabar', 'ratopati', 'setopati', 'rajdhanidaily','nagariknews','abhiyandaily','karobardaily','himalkhabar','arthapath','capitalnepal','ukeraa','clickmandu','globalaawaj','nepalviews','nepalpress','khabarhub','nepalipatra','meroauto','gorkhapatraonline','annapurnapost','thehimalayantimes','nepalnews','newsofnepal','souryaonline','ujyaaloonline','risingnepaldaily','arthakendra','bizkhabar','news24nepal','baahrakhari','nepalkhabar','nepalsamaya','techpana']
+nepaliNewsSites = ['merolagani', 'bizshala', 'bizpati', 'arthasarokar', 'onlinekhabar', 'ratopati', 'setopati', 'rajdhanidaily','nagariknews','abhiyandaily','karobardaily','himalkhabar','arthapath','capitalnepal','ukeraa','clickmandu','globalaawaj','nepalviews','nepalpress','khabarhub','nepalipatra','meroauto','gorkhapatraonline','annapurnapost','thehimalayantimes','nepalnews','newsofnepal','souryaonline','ujyaaloonline','arthakendra','bizkhabar','news24nepal','baahrakhari','nepalkhabar','nepalsamaya','techpana']
 
 app = FastAPI()
 
