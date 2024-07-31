@@ -15,7 +15,7 @@ app = FastAPI()
 class URLRequest(BaseModel):
     url: str
 
-@app.post("/summarize")
+@app.get("/summarize")
 def summarize_url(url: str = Query(...)):
     if not url.startswith("http"):
         raise HTTPException(status_code=400, detail="Invalid URL format")
