@@ -14,6 +14,14 @@ nepaliNewsSites = ['merolagani', 'bizshala', 'bizpati', 'arthasarokar', 'onlinek
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000, https://tenpaisa.tech"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 class URLRequest(BaseModel):
     url: str
 
