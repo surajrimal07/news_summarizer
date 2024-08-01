@@ -5,6 +5,7 @@ import nltk
 from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel
 from newspaper import Article
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 nltk.download('stopwords')
